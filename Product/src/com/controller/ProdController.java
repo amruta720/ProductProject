@@ -64,11 +64,15 @@ public class ProdController extends HttpServlet {
 		pw.println("<a href='Product.jsp'>YES</a>");
 		pw.println("<a href='Cart.jsp'>NO</a>");
 		ProdDao pd=new ProdDao();
-		//int i=pd.saveData(lst);
+		int i=pd.saveData(lst);
 		//if(i>0)
 		//{
 		//	response.sendRedirect("Product.jsp");
 		//}
+	         if(i==0)
+	         {
+	        	 response.sendRedirect("Error.jsp");
+	         }
 	}
 
 	/**

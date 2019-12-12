@@ -1,18 +1,47 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+    <%@page errorPage="Error.jsp" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Insert title here</title>
+
 </head>
-<body>
+
+<style>
+table{
+border:2px solid black;
+border-radius:30px;
+padding:100px;
+
+}
+</style>
+<body background="shopping.jpg">
+
+  
+
 <form action="ProdController" method="post">
-<br>ProdNo<input type="text" name="pno"></br>
-<br>ProdName<input type="text" name="pn"></br>
-<br>Price<input type="text" name="pr"></br>
-<br>Quantity<input type="text" name="qt"></br>
-<input type="submit" value="submit" name="save">
+
+
+<table align="center" style="width:40%" style="height:100%">
+
+<tr>
+<td><b>ProdNo</b><input type="text" name="pno"></td>
+</tr>
+<tr>
+<td><b>ProdName</b><input type="text" name="pn"></td>
+</tr>
+<tr>
+<td><b>Price</b><input type="text" name="pr"></td>
+</tr>
+<tr>
+<td><b>Quantity	</b><input type="text" name="qt"></td>
+</tr>
+<tr>
+<td><input type="submit" value="submit" name="save"></td>
+</tr>
+</table>
+
 </form>
 </body>
 </html>
